@@ -1,12 +1,15 @@
 import '../css/burger.css'
 // BURGER NAV ICON BUILD
 function Burger () {
+    function onBurgerClick (){
+        console.log('geting clicked')
+    };
     return (
-        <div class='burger-nav-container' onClick='mobileMenuToggle()'>
-            <button class='burger-bar-wrapper'>
-                <div class='burger-bar'></div>
-                <div class='burger-bar'></div>
-                <div class='burger-bar'></div>
+        <div className='burger-nav-container' onClick={onBurgerClick}>
+            <button className='burger-bar-wrapper'>
+                <div className='burger-bar'></div>
+                <div className='burger-bar'></div>
+                <div className='burger-bar'></div>
             </button>
         </div>
     );

@@ -1,7 +1,7 @@
 /* BURGER NAV ICON */
 .burger-nav-container{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .burger-bar-wrapper{
     width: fit-content;
