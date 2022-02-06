@@ -1,11 +1,15 @@
-import '../css/burger.css'
-// BURGER NAV ICON BUILD
-function Burger () {
-    function onBurgerClick (){
-        console.log('geting clicked')
-    };
+import '../css/burger.css';
+import React, { useState } from 'react';
+
+
+function Burger (props) {
+    
+    function burgerOnClick (){
+        props.onClick()
+    }
+
     return (
-        <div className='burger-nav-container' onClick={onBurgerClick}>
+        <div className='burger-nav-container' onClick={burgerOnClick}>
             <button className='burger-bar-wrapper'>
                 <div className='burger-bar'></div>
                 <div className='burger-bar'></div>

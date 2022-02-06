@@ -1,7 +1,14 @@
 import '../css/navigation.css';
+import BackgroundPlanets from './BackgroundPlanets';
 
 
-function Navigation(){
+
+function Navigation(props, burger){
+
+    function onXClick() {
+        props.onClick();
+    };
+
     const navLinkAttributes = [
         'masses',
         'diameters',
@@ -15,25 +22,12 @@ function Navigation(){
     return(
         <div className='menu-container'>
             {/* ALL PLANETS IN BACKGROUND; CSS IN PLANETS.CSS */}
-            <div className='planets-container'>
-                <div className='sun planet'></div>
-                <div className='mercury planet '> </div>
-                <div className='venus planet'> </div>
-                <div className='earth planet'> </div>
-                <div className='mars planet'> </div>
-                <div className='jupiter planet'> </div>
-                <div className='saturn planet'>
-                    <div className='saturn-ring'> </div>
-                </div>
-                <div className='uranus box-shadow planet'> </div>
-                <div className='neptune box-shadow planet'> </div>
-            </div>
-            {/* ALL PLANETS IN BACKROUND END HERE */}
+            <BackgroundPlanets/>
 
             {/* MENU HEADERS */}
             <h1 className='header'>Solar System</h1>
-            <div className='menu-wrapper display-none'>
-                <button className='menu-close-x'></button>
+            <div className={`menu-wrapper ${props.burger? null : 'display-none'}`}>
+                <button className='menu-close-x' onClick={onXClick}></button>
                 <ul className='menu'>
                 {/* MENU LIST ITEMS BEING TEMPLATED */}
                 {
