@@ -1,11 +1,10 @@
 /* BURGER NAV ICON */
 .burger-nav-container{
     display: flex;
-    justify-content: flex-end;
 }
 .burger-bar-wrapper{
     width: fit-content;
-    margin: 10px 10px 0 0;
+    margin: 10px 0 0 5px;
     background: none;
     border: none;
 }

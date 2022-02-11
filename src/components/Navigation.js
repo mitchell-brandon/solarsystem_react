@@ -1,9 +1,8 @@
 import '../css/navigation.css';
-import BackgroundPlanets from './BackgroundPlanets';
 
 
 
-function Navigation(props, burger){
+function Navigation(props){
 
     function onXClick() {
         props.onClick();
@@ -21,15 +20,14 @@ function Navigation(props, burger){
 
     return(
         <div className='menu-container'>
-            {/* ALL PLANETS IN BACKGROUND; CSS IN PLANETS.CSS */}
-            <BackgroundPlanets/>
 
             {/* MENU HEADERS */}
             <h1 className='header'>Solar System</h1>
             <div className={`menu-wrapper ${props.burger? null : 'display-none'}`}>
                 <button className='menu-close-x' onClick={onXClick}></button>
                 <ul className='menu'>
-                {/* MENU LIST ITEMS BEING TEMPLATED */}
+
+                {/* MENU LIST ITEMS TEMPLATED */}
                 {
                     navLinkAttributes.map(attribute =>
                         <li key={attribute + 1}>
@@ -38,11 +36,13 @@ function Navigation(props, burger){
                         </li>
                     )
                 }
+
                 </ul>
             </div>
-            <h3 className='header data-title'>Planetary Masses</h3>
-            <p className='header data-metrics-title'> In Kilograms (10^24ks)</p>
-
+            <div className='subheader-wrapper'>
+                <h3 className='header'>Planetary Masses</h3>
+                <p className='header'> In Kilograms (10^24kg)</p>
+            </div>
         </div>
     )
 };

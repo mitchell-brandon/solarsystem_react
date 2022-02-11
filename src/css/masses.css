@@ -1,0 +1,96 @@
+
+.masses-container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+    z-index: -1;
+}
+.sun{
+    height: clamp(700px, 100vw, 1440px);
+    width: clamp(700px, 100vw, 1440px);
+    border-radius: 100%;
+    background-color: var(--sun-orange);
+    display: grid;
+    place-content: center;
+}
+
+/* PLANTES CSS */
+.planets-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 300px;
+}
+.planet-container{
+    padding: 0;
+    margin: 0 4px;
+    text-align: center;
+}
+.planet-container p {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(12px, 2vw, 14px);
+}
+.planet-wrapper{
+    height: 16px;
+    display: grid;
+    place-content: center;
+}
+.planet{
+    border-radius: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mercury{
+    background: var(--mercury-red);
+    height: 1.2px;
+    width: 1.2px; 
+}
+.venus{
+    background: var(--venus-brown);
+    height: 2.9px;
+    width: 2.9px; 
+}
+.earth{
+    background: var(--earth-blue);
+    height: 3px;
+    width: 3px; 
+}
+.mars{
+    background: var(--mars-red);
+    height: 1.5px;
+    width: 1.5px; 
+}
+.jupiter{
+    background: var(--jupiter-green);
+    height: 15px;
+    width: 15px;
+}
+.saturn{
+    background: var(--saturn-purple);
+    height: 10px;
+    width: 10px;
+    display: grid;
+    place-content: center;
+}
+    .saturn-ring{
+        height: .8px;
+        width: 18px;
+        background-color: #c4c4c4;
+        border-radius: 10px;
+        transform: rotate(-45.79deg);
+    }
+.uranus{
+    background: var(--uranus-blue);
+    height: 8px;
+    width: 8px; 
+}
+.neptune{
+    background: var(--neptune-blue);
+    height: 6px;
+    width: 6px; 
+}
