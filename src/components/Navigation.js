@@ -12,11 +12,15 @@ function Navigation(props){
         'masses',
         'diameters',
         'distances',
-        'tempratures',
+        'temperatures',
         'days',
         'years',
         'moons',
     ]
+
+    function onRadioChange(element){
+        props.onChange(element);
+    }
 
     return(
         <div className='menu-container'>
@@ -29,10 +33,10 @@ function Navigation(props){
 
                 {/* MENU LIST ITEMS TEMPLATED */}
                 {
-                    navLinkAttributes.map(attribute =>
-                        <li key={attribute + 1}>
-                            <input type='radio' id={attribute} name='radio' value={attribute}/>
-                            <label htmlFor={attribute} className='menu-link'>{attribute[0].toUpperCase() + attribute.slice(1)}</label>       
+                    navLinkAttributes.map( (attribute, index) =>
+                        <li key={attribute + 1} onChange={onRadioChange}>
+                            <input type='radio' id={attribute} name='radio' value={attribute} defaultChecked={index === 0}/>
+                            <label htmlFor={attribute} className='menu-link'>{attribute[0].toUpperCase() + attribute.slice(1)} </label>       
                         </li>
                     )
                 }
