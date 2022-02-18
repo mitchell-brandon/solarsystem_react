@@ -2,6 +2,7 @@
   {
     "id": 0,
     "name": "Sun",
+    "value": "sun",
     "mass": 1988500.0,
     "diameter": 1392700.0,
     "density": 1408.0,
@@ -26,6 +27,7 @@
     {
       "id": 1,
       "name": "Mercury",
+      "value": "mercury",
       "mass": 0.33,
       "diameter": 4879.0,
       "density": 5427.0,
@@ -50,6 +52,7 @@
     {
       "id": 2,
       "name": "Venus",
+      "value": "venus",
       "mass": 4.87,
       "diameter": 12104.0,
       "density": 5243.0,
@@ -74,6 +77,7 @@
     {
       "id": 3,
       "name": "Earth",
+      "value": "earth",
       "mass": 5.97,
       "diameter": 12756.0,
       "density": 5514.0,
@@ -98,6 +102,7 @@
     {
       "id": 4,
       "name": "Mars",
+      "value": "mars",
       "mass": 0.642,
       "diameter": 6792.0,
       "density": 3933.0,
@@ -122,6 +127,7 @@
     {
       "id": 5,
       "name": "Jupiter",
+      "value": "jupiter",
       "mass": 1898.0,
       "diameter": 142984.0,
       "density": 1326.0,
@@ -146,6 +152,7 @@
     {
       "id": 6,
       "name": "Saturn",
+      "value": "saturn",
       "mass": 568.0,
       "diameter": 120536.0,
       "density": 687.0,
@@ -170,6 +177,7 @@
     {
       "id": 7,
       "name": "Uranus",
+      "value": "uranus",
       "mass": 86.8,
       "diameter": 51118.0,
       "density": 1271.0,
@@ -194,6 +202,7 @@
     {
       "id": 8,
       "name": "Neptune",
+      "value": "neptune",
       "mass": 102.0,
       "diameter": 49528.0,
       "density": 1638.0,
@@ -218,6 +227,7 @@
     {
       "id": 9,
       "name": "Pluto",
+      "value": "pluto",
       "mass": 0.0146,
       "diameter": 2370.0,
       "density": 2095.0,

@@ -1,41 +1,32 @@
-import React, { useState } from 'react';
-import '../css/base.css';
-import Burger from './Burger';
-import Navigation from './Navigation';
-import Masses from './Masses';
-import Diameters from './Diameters';
-import Distances from './Distances';
+import React, { useState } from "react";
+import "../css/base.css";
+import Burger from "./Burger";
+import Navigation from "./Navigation";
+import GraphingComponents from "./GraphingComponents";
 
 function App() {
-  const[isMenuVisible, setisMenuVisible] = useState(false);
-  const[radioValue, setRadioValue] = useState('masses')
-
-  function burgerOnClick(){
+  //STATE
+  const [isMenuVisible, setisMenuVisible] = useState(false);
+  const [radioValue, setRadioValue] = useState("masses");
+//FUNCTIONS
+  function burgerOnClick() { //TOGGLES MOBILE SCREEN SIZE MENU OVERLAY
     setisMenuVisible(!isMenuVisible);
-    console.log('this is clicked', isMenuVisible);
+    console.log("this is clicked", isMenuVisible);
   }
 
-  function onRadioChange(element) {
+  function onRadioChange(element) { // GRABS THE VALUE OF THE CURRENT CHECKED RADIO BUTTON
     setRadioValue(element.target.value);
-    console.log(element.target.value)   
   }
+
   return (
-    <div className='body-content'>
-      <Burger onClick={burgerOnClick}/>
-      <Navigation burger={isMenuVisible} onClick={burgerOnClick} onChange={onRadioChange}/>
-      {radioValue === 'masses'?
-        <Masses/>
-        :
-        radioValue === 'diameters'?
-        <Diameters radioValue ={radioValue}/>
-        :
-        radioValue === 'distances'?
-        <Distances/>
-        :
-        null
-      }
-      
-      
+    <div className="body-content">
+      <Burger onClick={burgerOnClick} />
+      <Navigation
+        burger={isMenuVisible}
+        onClick={burgerOnClick}
+        onChange={onRadioChange}
+      />
+      <GraphingComponents radioValue={radioValue}/>
     </div>
   );
 }

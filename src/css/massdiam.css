@@ -1,10 +1,18 @@
-.massdiam-container{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
-    display: grid;
-    place-content: center;
-    z-index: -1;
+.massdiam-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+  z-index: -1;
+}
+
+.massdiam-sun {
+  height: clamp(700px, 100vw, 1440px);
+  width: clamp(700px, 100vw, 1440px);
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
 }

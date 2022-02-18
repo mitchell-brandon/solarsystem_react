@@ -1,13 +1,7 @@
 
 
-.sun{
-    height: clamp(700px, 100vw, 1440px);
-    width: clamp(700px, 100vw, 1440px);
-    border-radius: 100%;
-    display: grid;
-    place-content: center;
-}
-.planet-template1-content-container{
+
+.planets-content-container{
     margin:200px auto 0 auto;
 }
 .sun-p-wrapper{
