@@ -17,6 +17,7 @@
     position: absolute;
     left: -410px;
     top: -555px;
+    transition: 1s;
 }
 .distances-content-container{
     padding: 0;
@@ -27,5 +28,21 @@
     height: clamp(500px, 103vw, 600px);
     padding: 0;
     margin:0;
-    /* border: solid 2px blue; */
 }
+
+.mercury-dist-container{
+    display: flex;
+    position: absolute;
+    top: 18%;
+    left: 4%;
+}
+.mercury-dist{
+    margin: 0 5px;
+}
+
+
+@media only screen and (min-width: 500px) {
+    .mercury-dist-container {
+      top: 15%;
+    }
+  }

@@ -1,3 +1,4 @@
+import class_attributes from "../class_attributes.json";
 import "../css/navigation.css";
 
 function Navigation(props) {
@@ -5,15 +6,6 @@ function Navigation(props) {
     props.onClick();
   }
 
-  const navLinkAttributes = [
-    "masses",
-    "diameters",
-    "distances",
-    "temperatures",
-    "days",
-    "years",
-    "moons",
-  ];
 
   function onRadioChange(element) {
     props.onChange(element);
@@ -27,17 +19,17 @@ function Navigation(props) {
         <button className="menu-close-x" onClick={onXClick}></button>
         <ul className="menu">
           {/* MENU LIST ITEMS TEMPLATED */}
-          {navLinkAttributes.map((attribute, index) => (
-            <li key={attribute + 1} onChange={onRadioChange}>
+          {class_attributes.map((attribute, index) => (
+            <li key={attribute.value + 1} onChange={onRadioChange}>
               <input
                 type="radio"
-                id={attribute}
+                id={attribute.value}
                 name="radio"
-                value={attribute}
+                value={attribute.value}
                 defaultChecked={index === 0}
               />
-              <label htmlFor={attribute} className="menu-link">
-                {attribute[0].toUpperCase() + attribute.slice(1)}{" "}
+              <label htmlFor={attribute.value} className="menu-link">
+                {attribute.nav_link}
               </label>
             </li>
           ))}

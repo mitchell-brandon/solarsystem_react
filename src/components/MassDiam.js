@@ -10,7 +10,7 @@ function MassDiam(props) {
 
   //FUNCTIONS
   function conditionalClassSuffix() { // CONDITIONALLY RENDERS CLASS NAMES TO DETERMINE
-    radioValue === "diameters"        // WHICH STYLES ARE CURRENTLY REENDERED
+    radioValue === "diameters"        // WHICH STYLES ARE ACTIVE PER RADIO VALUE
     ? (classSuffix = "-diam")
     : (classSuffix = "-mass");
   }
@@ -31,7 +31,7 @@ function MassDiam(props) {
               <p className="sun-p">{sun.diameter.toLocaleString()}</p>
             )}
           </div>
-          <Planets radioValue={radioValue} classSuffix={classSuffix}/>
+          <Planets radioValue={radioValue}/>
         </div>
       </div>
     </div>

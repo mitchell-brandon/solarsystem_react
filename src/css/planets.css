@@ -41,35 +41,48 @@
     box-sizing: border-box;
 }
 
-/* MASSES PLANETS CSS */
+/* PLANETS CSS */
 .sun-mass{
     background-color: var(--sun-orange);
+    transition: .7s;
 }
 .mercury{
     height: 1.2px;
-    width: 1.2px; 
+    width: 1.2px;
+    background: var(--mercury-red);
+    transition: .7s;
 }
 .venus{
     height: 2.9px;
-    width: 2.9px; 
+    width: 2.9px;
+    background: var(--venus-brown);
+    transition: .75s; 
 }
 .earth{
     height: 3px;
-    width: 3px; 
+    width: 3px;
+    background: var(--earth-blue);
+    transition: .8; 
 }
 .mars{
     height: 1.5px;
-    width: 1.5px; 
+    width: 1.5px;
+    background: var(--mars-red);
+    transition: .85s; 
 }
 .jupiter{
     height: 15px;
     width: 15px;
+    background: var(--jupiter-green);
+    transition: .9s;
 }
 .saturn{
     height: 10px;
     width: 10px;
     display: grid;
     place-content: center;
+    background: var(--saturn-purple);
+    transition: .95s;
 }
     .saturn-ring{
         height: .8px;
@@ -80,66 +93,61 @@
     }
 .uranus{
     height: 8px;
-    width: 8px; 
+    width: 8px;
+    background: var(--uranus-blue);
+    transition: 1s; 
 }
 .neptune{
     height: 6px;
-    width: 6px; 
+    width: 6px;
+    background: var(--neptune-blue);
+    transition: 1.05s; 
 }
  
 
 /* DIAMETERS PLANETS*/
 .sun-diam{
     border: 2px solid var(--sun-orange);
+    background: transparent;
+    transition: .7s;
 }
 .mercury-diam{
     border: .3px solid var(--mercury-red);
+    background: transparent;
+    transition: .7s;
 }
 .venus-diam{
     border: 0.5px solid var(--venus-brown);
+    background: transparent;
+    transition: .75s;
 }
 .earth-diam{
     border: 0.5px solid var(--earth-blue);
+    background: transparent;
+    transition: .8s;
 }
 .mars-diam{
     border: 0.5px solid var(--mars-red);
+    background: transparent;
+    transition: .85s;
 }
 .jupiter-diam{
     border: 0.5px solid var(--jupiter-green);
+    background: transparent;
+    transition: .9s;
 }
 .saturn-diam{
     border: 0.5px solid var(--saturn-purple);
+    background: transparent;
+    transition: .95s;
 }
 .uranus-diam{
     border: 0.5px solid var(--uranus-blue);
+    background: transparent;
+    transition: .1s;
 }
 .neptune-diam{
     border: 0.5px solid var(--neptune-blue);
-}
-
-
-/* MASSES PLANETS */
-.mercury-mass{
-    background: var(--mercury-red);
-}
-.venus-mass{
-    background: var(--venus-brown);
-}
-.earth-mass{
-    background: var(--earth-blue);
-}
-.mars-mass{
-    background: var(--mars-red);
-}
-.jupiter-mass{
-    background: var(--jupiter-green);
-}
-.saturn-mass{
-    background: var(--saturn-purple);
-}
-.uranus-mass{
-    background: var(--uranus-blue);
-}
-.neptune-mass{
-    background: var(--neptune-blue);
+    background: transparent;
+    transition: 1.05s;
 }

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "value": "masses",
+        "nav_link": "Masses",
+        "suffix": "-mass"
+    },
+    {
+        "id": 1,
+        "value": "diameters",
+        "nav_link": "Diameters",
+        "suffix": "-diam"
+    },
+    {
+        "id": 2,
+        "value": "distances",
+        "nav_link": "Distances",
+        "suffix": "-dist"
+    },
+    {
+        "id": 3,
+        "value": "temperatures",
+        "nav_link": "Temperatures",
+        "suffix": "-temp"
+    },
+    {
+        "id": 4,
+        "value": "days",
+        "nav_link": "Days",
+        "suffix": "-days"
+    },
+    {
+        "id": 5,
+        "value": "years",
+        "nav_link": "Years",
+        "suffix": "-years"
+    },
+    {
+        "id": 6,
+        "value": "moons",
+        "nav_link": "Moons",
+        "suffix": "-moons"
+    }
+]
