@@ -41,6 +41,18 @@
     box-sizing: border-box;
 }
 
+/* THIS CLASS IS CONDITOINALLY RENDERED.
+IT IS USED FOR DISTANCES,TEMPERATURES, DAYS, AND YEARS COMPONENTS ONLY */
+.flexed-planet-container{
+    display: flex;
+    position: absolute;
+}
+
+.flexed-planet-container p:nth-child(even){
+    margin: 0 5px;
+}
+
+
 /* PLANETS CSS */
 .sun-mass{
     background-color: var(--sun-orange);

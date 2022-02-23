@@ -29,20 +29,53 @@
     padding: 0;
     margin:0;
 }
-
-.mercury-dist-container{
-    display: flex;
-    position: absolute;
-    top: 18%;
-    left: 4%;
+.distances-content-wrapper{
+    position: relative;
 }
-.mercury-dist{
-    margin: 0 5px;
+
+/* PLANET POSITIONING */
+.mercury-dist-container{
+    top: -1%;
+    left:.5%;
+}
+.venus-dist-container{
+    top: 1.25%;
+    left:.5%;
+}
+.earth-dist-container{
+    top: 3.3%;
+    left:.8%;
+}
+.mars-dist-container{
+    top: 8%;
+    left:1%;
+}
+.jupiter-dist-container{
+    top: 18%;
+    left:3%;
+}
+.saturn-dist-container{
+    top: 35%;
+    left:10.5%;
+}
+.uranus-dist-container{
+    top: 60%;
+    left:31%;
+}
+.neptune-dist-container{
+    flex-direction: row-reverse;
+    top: 87%;
+    left:80%;
 }
 
 
 @media only screen and (min-width: 500px) {
-    .mercury-dist-container {
-      top: 15%;
+    .neptune-dist-container{
+        left: clamp(80%, 78vw, 95%);
+    }
+  }
+@media only screen and (min-width: 1050px) {
+    .neptune-dist-container{
+        left: clamp(95%, 70vw, 97%);
     }
   }

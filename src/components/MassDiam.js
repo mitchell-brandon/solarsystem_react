@@ -12,7 +12,7 @@ function MassDiam(props) {
   function conditionalClassSuffix() { // CONDITIONALLY RENDERS CLASS NAMES TO DETERMINE
     radioValue === "diameters"        // WHICH STYLES ARE ACTIVE PER RADIO VALUE
     ? (classSuffix = "-diam")
-    : (classSuffix = "-mass");
+    : (classSuffix = "-mass")
   }
   
 
@@ -35,6 +35,6 @@ function MassDiam(props) {
         </div>
       </div>
     </div>
-  );
+  )
 }
 export default MassDiam;

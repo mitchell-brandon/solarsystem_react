@@ -3,12 +3,12 @@ import "../css/navigation.css";
 
 function Navigation(props) {
   function onXClick() {
-    props.onClick();
+    props.onClick()
   }
 
 
   function onRadioChange(element) {
-    props.onChange(element);
+    props.onChange(element)
   }
 
   return (
@@ -40,7 +40,7 @@ function Navigation(props) {
         <p className="header"> In Kilograms (10^24kg)</p>
       </div>
     </div>
-  );
+  )
 }
 
 export default Navigation;

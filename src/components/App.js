@@ -10,12 +10,12 @@ function App() {
   const [radioValue, setRadioValue] = useState("masses");
 //FUNCTIONS
   function burgerOnClick() { //TOGGLES MOBILE SCREEN SIZE MENU OVERLAY
-    setisMenuVisible(!isMenuVisible);
-    console.log("this is clicked", isMenuVisible);
+    setisMenuVisible(!isMenuVisible)
+    console.log("this is clicked", isMenuVisible)
   }
 
   function onRadioChange(element) { // GRABS THE VALUE OF THE CURRENT CHECKED RADIO BUTTON
-    setRadioValue(element.target.value);
+    setRadioValue(element.target.value)
   }
 
   return (
@@ -28,7 +28,7 @@ function App() {
       />
       <GraphingComponents radioValue={radioValue}/>
     </div>
-  );
+  )
 }
 
 export default App;
