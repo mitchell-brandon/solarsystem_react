@@ -1,0 +1,19 @@
+
+.graph-container{
+    position: relative;
+    border: solid 2px orange;
+}
+.data-list{
+    list-style: none;
+    color: #fff;
+    position: absolute;
+}
+.vertical-bar{
+    width: 1px;
+    height: 460px;
+    border-radius: 10px;
+    background: #c4c4c4;
+    position: absolute;
+    left: 11%;
+    /* left: 40px; */
+}
