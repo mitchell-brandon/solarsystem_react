@@ -58,6 +58,12 @@ IT IS USED FOR DISTANCES,TEMPERATURES, DAYS, AND YEARS COMPONENTS ONLY */
     background-color: var(--sun-orange);
     transition: .7s;
 }
+.sun{
+    height: 50px;
+    width: 50px;
+    background: var(--sun-orange);
+
+}
 .mercury{
     height: 1.2px;
     width: 1.2px;

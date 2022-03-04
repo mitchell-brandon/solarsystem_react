@@ -1,0 +1,36 @@
+.sun-years-container {
+    top: 80%;
+    left: 14%;
+}
+.mercury-years-container{
+    left: 17%;
+    top: 85%;
+}
+.venus-years-container{
+    left: 20%;
+    top: 77.5%;
+}
+.earth-years-container{
+    left: 25%;
+    top: 69.7%;
+}
+.mars-years-container{
+    left: 38%;
+    top: 52%;
+}
+.jupiter-years-container{
+    left: 35%;
+    top: 40.3%;
+}
+.saturn-years-container{
+    left: 52%;
+    top: 24.8%;
+}
+.uranus-years-container{
+    left: 50%;
+    top: 14%;
+}
+.neptune-years-container{
+    left: 60%;
+    top: 1%;
+}

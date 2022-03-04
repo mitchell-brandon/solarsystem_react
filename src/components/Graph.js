@@ -1,39 +1,11 @@
 import "../css/graph.css";
-import solarJSON from "../solar_system.json";
+import Planets from "./Planets";
 
 function Graph( props) {
-    // idea 1
-    //compare the highest and lowest value of temperatures.
-    //start skip counting from lowest value
-    //if no value in certain integer range, then skip count for the next value
-    // or skip count values manually, then conditionaly render the skip counting range
+    const radioValue = props.radioValue
+    const planets = props.planets
 
-    //idea 2
-    // function that takes 3 arguements, range start, range end, skip count interval number
-    //it then produces a counter in that range skiping by the specified interval
-
-
-    // let planetData = []
-    // function counter(){ //test function to try and produce the data values compared to planetary
-    //     for (let planet of solarJSON){
-    //         planetData.push(planet.meanTemperature)
-    //     }
-    //     let largestValue = Math.max(...planetData);
-    //     let smallestValue = Math.min(...planetData);
-    //     console.log(largestValue, smallestValue)
-    //     let count = smallestValue;
-
-    //     while (count < largestValue){
-    //         count = smallestValue += 50
-    //         console.log(count)
-    //     }
-        
-    // }
-    // counter()
-
-    
     function rangeCounter(){
-        const radioValue = props.radioValue
         let rangeArguments = ''
 
         // RANGECOUNTER IS BEING INVOKED HERE, FUNCTION LIVES IN GRANDPARENT GRAPHINGCOMPONENTS.JS
@@ -55,15 +27,21 @@ function Graph( props) {
 
     return(
         <div className="graph-container">
-            <ul className='data-list'>
-                {
-                    rangeCounter().map( (value) => (
-                        <li key={value}>{value.toLocaleString()}</li>
-                        
-                    ))
-                }
-            </ul>
-            <div className="vertical-bar"></div>
+            <div className='graph-wrapper'>
+                <ul className='data-list'>
+                    {
+                        rangeCounter().map( (value) => (
+                            value === 'data-division' 
+                            ? 
+                            value = <div className='horizontal-bar'> </div>
+                            :
+                            <li key={value} className='data-y-value'>{value.toLocaleString()}</li>
+                        ))
+                    }
+                    <Planets radioValue={radioValue} planets={planets}/>
+                </ul>
+                <div className="vertical-bar"></div>
+            </div>
         </div>
     )
 }

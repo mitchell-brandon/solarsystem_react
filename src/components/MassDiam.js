@@ -7,6 +7,7 @@ function MassDiam(props) {
   const sun = solarJSON[0];
   let classSuffix = "-mass";
   const radioValue = props.radioValue;
+  const planets = props.planets
 
   //FUNCTIONS
   function conditionalClassSuffix() { // CONDITIONALLY RENDERS CLASS NAMES TO DETERMINE
@@ -31,7 +32,7 @@ function MassDiam(props) {
               <p className="sun-p">{sun.diameter.toLocaleString()}</p>
             )}
           </div>
-          <Planets radioValue={radioValue}/>
+          <Planets radioValue={radioValue} planets={planets}/>
         </div>
       </div>
     </div>

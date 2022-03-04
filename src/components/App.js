@@ -25,6 +25,7 @@ function App() {
         burger={isMenuVisible}
         onClick={burgerOnClick}
         onChange={onRadioChange}
+        radioValue ={radioValue}
       />
       <GraphingComponents radioValue={radioValue}/>
     </div>

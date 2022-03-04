@@ -1,0 +1,36 @@
+.sun-days-container {
+    top: 39%;
+    left: 14%;
+}
+.mercury-days-container{
+    left: 17%;
+    top: 17%;
+}
+.venus-days-container{
+    left: 20%;
+    top: 1.9%;
+}
+.earth-days-container{
+    left: 25%;
+    top: 62.8%;
+}
+.mars-days-container{
+    left: 46%;
+    top: 62.3%;
+}
+.jupiter-days-container{
+    left: 35%;
+    top: 79%;
+}
+.saturn-days-container{
+    left: 60%;
+    top: 77.3%;
+}
+.uranus-days-container{
+    left: 50%;
+    top: 69.5%;
+}
+.neptune-days-container{
+    left: 75%;
+    top: 71%;
+}

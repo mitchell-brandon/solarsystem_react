@@ -1,6 +1,37 @@
-.temperatures-container{
-    border: solid 1px red;
+.sun-temp-container{
+    left: 14%;
+    top: 4%;
 }
-.temperatures-content-container{
-    border: solid 2px blue;
+
+.mercury-temp-container{
+    top: 45%;
+    left: 17%;
+}
+.venus-temp-container{
+    top: 27.5%;
+    left: 20%;
+}
+.earth-temp-container{
+    top: 52.5%;
+    left: 25%;
+}
+.mars-temp-container{
+    top: 62%;
+    left: 30%;
+}
+.jupiter-temp-container{
+    top: 67%;
+    left: 35%;
+}
+.saturn-temp-container{
+    top: 71%;
+    left: 45%;
+}
+.uranus-temp-container {
+    top: 77%;
+    left: 50%;
+}
+.neptune-temp-container{
+    top: 77.5%;
+    left: 75%;
 }
