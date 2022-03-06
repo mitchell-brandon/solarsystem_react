@@ -3,13 +3,11 @@ import Graph from "./Graph";
 
 
 function Temperatures(props){
-    const planets = props.planets
+    const planets = props.planets;
 
     return(
-        <div className='temperatures-container'>
-            <div className='temperatures-content-container'>
-                <Graph radioValue={props.radioValue} rangeCounter={props.rangeCounter} planets={planets}/>
-            </div>
+        <div>
+            <Graph radioValue={props.radioValue} rangeCounter={props.rangeCounter} planets={planets}/>
         </div>
     )
 }

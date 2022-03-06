@@ -2,8 +2,8 @@ import "../css/moons.css";
 import Planets from "./Planets";
 
 function Moons(props){
-    const radioValue = props.radioValue
-    const planets = props.planets
+    const radioValue = props.radioValue;
+    const planets = props.planets;
 
     function moonCounter(planet) {
         let count = 0
@@ -21,19 +21,20 @@ function Moons(props){
         return divArray
     }
     return(
-        <div className = 'moons-container'>
-            <div className='distances-container'>
-                <div className ='distance-sun'></div>
+        <div>
+            <div className='moons-sun-container'>
+                <div className ='moons-sun'></div>
             </div>
-            <div className='moons-content-wrapper'>
-                <div className='y-values'>
-                    <Planets radioValue={radioValue} planets = {planets}/>
-                    <div className="moons-vertical-bar"></div>
+
+            <div className='moons-content-container'>
+                <div className='y-labels-container'>
+                    <Planets radioValue={radioValue} planets={planets}/>
+                    <div className="y-labels-bar"></div>
                 </div>
                 <ul>
                     {
-                        planets.map( (planet) => (
-                            <li className={`moon-li-${planet.value}`}> {moonCounter(planet)}</li>
+                        planets.map( (planet, number) => (   
+                            <li className={`moon-li-${planet.value}`} key={number++}> {moonCounter(planet)}</li>
                         ))
                     }
                </ul>

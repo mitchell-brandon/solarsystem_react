@@ -5,35 +5,27 @@
 .menu-wrapper-display-none{
     display: none;
 }
+.header{
+    font-family: var(--header-font);
+    color: var(--silver);
+    font-weight: 300;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* REUSABLES END */
+
+
+
 
 .menu-container{
     width: fit-content;
     margin: auto;
-    /* position: relative; */
 }
 .menu-container h1{
     font-size: clamp(48px, 8vw, 96px);
     margin: 10px 0 0 0;
     text-align: center;
-    /* width: 100%;
-    max-width: 100%; */
 }
-.subheader-wrapper{
-    margin:auto;
-    max-width: 650px;
-}
-.menu-container h3{
-    text-align: right;
-    margin: 5px 0 0 0;
-    font-size: 18px;
-    font-weight: bold;
-}
-.menu-container p{
-    text-align: right;
-    margin: 5px 0 0 0;
-    font-size: 14px;
-    font-weight: bold;
-}
+
 .menu-wrapper{
     height: 100vh;
     width: 100vw;
@@ -59,7 +51,10 @@
     cursor: pointer;
     transform: scale(1.2);
 }
-.menu-container ul{
+.menu{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0 0 16%;
     text-align: center;
     margin: 0;
     height: 75%;
@@ -68,19 +63,6 @@
     flex-direction: column;
     justify-content: space-around;
     list-style: none !important;
-}
-.menu{
-    display: flex;
-    justify-content: space-around;
-    margin: 5px 0 0 16%;
-}
-.menu-link{
-    font-family: var(--header-font);
-    color: var(--silver);
-    font-weight: 200;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-    font-size: 18px;
 }
 .menu input {
     visibility:hidden;
@@ -91,20 +73,41 @@
     padding: 0;
     margin:0;
 }
+.menu-link{
+    font-family: var(--header-font);
+    color: var(--silver);
+    font-weight: 200;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    font-size: 18px;
+}
 .menu input:checked + label {
     font-weight: bold;
     border: solid 1px var(--earth-blue);
     padding: 3px 15px;
     border-radius: 50px;
     background: rgba(22, 188, 243, 0.35);
-    ;
 }
-.header{
-    font-family: var(--header-font);
-    color: var(--silver);
-    font-weight: 300;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.subheader-wrapper{
+    margin:auto;
+    max-width: 650px;
 }
+
+/* THESE CLASSES ARE BEING MANUFACTURED IN metricSunheaders() */
+.menu-container h3{
+    text-align: right;
+    margin: 5px 0 0 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu-container p{
+    text-align: right;
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
 
 
 /* MEDIA QUERIES */

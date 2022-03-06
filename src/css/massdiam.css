@@ -16,3 +16,17 @@
   display: grid;
   place-content: center;
 }
+
+.massdiam-data-container{
+  margin:200px auto 0 auto;
+}
+.sun-p-wrapper{
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+.sun-p{
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}

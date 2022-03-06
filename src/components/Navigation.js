@@ -62,7 +62,9 @@ function Navigation(props) {
       <h1 className="header">Solar System</h1>
       <div className={`menu-wrapper ${props.burger ? null : "display-none"}`}>
         <button className="menu-close-x" onClick={onXClick}></button>
+
         <ul className="menu">
+
           {/* MENU LIST ITEMS TEMPLATED */}
           {class_attributes.map((attribute, index) => (
             <li key={attribute.value + 1} onChange={onRadioChange}>
@@ -72,13 +74,16 @@ function Navigation(props) {
                 name="radio"
                 value={attribute.value}
                 defaultChecked={index === 0}
+                onClick={props.burger? onXClick : null}
               />
               <label htmlFor={attribute.value} className="menu-link">
                 {attribute.nav_link}
               </label>
             </li>
           ))}
+          
         </ul>
+
       </div>
       <div className="subheader-wrapper">
         {metricSubheaders()}

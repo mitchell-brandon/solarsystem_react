@@ -1,3 +1,23 @@
+.years-sun-container{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    display: grid;
+    place-content: center;
+    z-index: -1;
+}
+.years-sun {
+    background: var(--sun-orange);
+    height: 700px;
+    width: 700px;
+    border-radius: 100%;
+    position: absolute;
+    left: -410px;
+    top: -555px;
+    transition: 1s;
+}
+
+/* PLANET POSITIONING */
 .sun-years-container {
     top: 80%;
     left: 14%;

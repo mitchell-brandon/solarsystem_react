@@ -30,12 +30,15 @@ function Graph( props) {
             <div className='graph-wrapper'>
                 <ul className='data-list'>
                     {
+                        // THIS LOGIC PRODUCES THE Y LABEL VERTICAL BAR.
+                        // IT TURNS THE STRING VALUE 'data-division' INTO
+                        // A JSX ELEMENT
                         rangeCounter().map( (value) => (
                             value === 'data-division' 
                             ? 
                             value = <div className='horizontal-bar'> </div>
                             :
-                            <li key={value} className='data-y-value'>{value.toLocaleString()}</li>
+                            <li key={value} className='graph-y-labels'>{value.toLocaleString()}</li>
                         ))
                     }
                     <Planets radioValue={radioValue} planets={planets}/>

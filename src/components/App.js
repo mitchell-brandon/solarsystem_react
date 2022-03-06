@@ -2,19 +2,21 @@ import React, { useState } from "react";
 import "../css/base.css";
 import Burger from "./Burger";
 import Navigation from "./Navigation";
-import GraphingComponents from "./GraphingComponents";
+import ComponentRender from "./ComponentRender";
 
 function App() {
   //STATE
   const [isMenuVisible, setisMenuVisible] = useState(false);
   const [radioValue, setRadioValue] = useState("masses");
-//FUNCTIONS
-  function burgerOnClick() { //TOGGLES MOBILE SCREEN SIZE MENU OVERLAY
+
+
+  //TOGGLES MOBILE SCREEN MENU OVERLAY
+  function burgerOnClick() { 
     setisMenuVisible(!isMenuVisible)
-    console.log("this is clicked", isMenuVisible)
   }
 
-  function onRadioChange(element) { // GRABS THE VALUE OF THE CURRENT CHECKED RADIO BUTTON
+  // GRABS THE VALUE OF THE CURRENT CHECKED RADIO BUTTON
+  function onRadioChange(element) {
     setRadioValue(element.target.value)
   }
 
@@ -27,7 +29,7 @@ function App() {
         onChange={onRadioChange}
         radioValue ={radioValue}
       />
-      <GraphingComponents radioValue={radioValue}/>
+      <ComponentRender radioValue={radioValue}/>
     </div>
   )
 }
