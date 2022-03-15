@@ -20,6 +20,7 @@ function Moons(props){
         }
         return divArray
     }
+    
     return(
         <div>
             <div className='moons-sun-container'>

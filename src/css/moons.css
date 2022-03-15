@@ -103,18 +103,18 @@
     }
     
     .moon-li-earth{
-        top: 39px;
+        top: 54px;
     }
     .moon-li-mars{
-        top: 37px;
+        top: 58px;
     }
     .moon-li-jupiter{
-        top: 33px;
+        top: 63px;
     }
     .moon-li-saturn{
-        top: 17px;
+        top: 27px;
     }
     .moon-li-uranus{
-        top: 1px;
+        top: 6px;
     }
 }

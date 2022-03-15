@@ -56,6 +56,7 @@ function Navigation(props) {
     return subHeaders
   }
 
+  
   return (
     <div className="menu-container">
       {/* MENU HEADERS */}
@@ -66,14 +67,14 @@ function Navigation(props) {
         <ul className="menu">
 
           {/* MENU LIST ITEMS TEMPLATED */}
-          {class_attributes.map((attribute, index) => (
+          {class_attributes.map((attribute) => (
             <li key={attribute.value + 1} onChange={onRadioChange}>
               <input
                 type="radio"
                 id={attribute.value}
                 name="radio"
                 value={attribute.value}
-                defaultChecked={index === 0}
+                defaultChecked={props.defaultRadioValue === attribute.value}
                 onClick={props.burger? onXClick : null}
               />
               <label htmlFor={attribute.value} className="menu-link">
